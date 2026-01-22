@@ -1,5 +1,6 @@
 // export const Person = ({ person }) => ();
-export const Person = ({ name, age, sex, isMarried, partnerName }) => {
+export const Person = ({ person }) => {
+  const { name, age, sex, isMarried, partnerName } = person;
   const personMessage =
     sex === 'm' ? (
       <p className="Person__partner">{partnerName} is my wife</p>
